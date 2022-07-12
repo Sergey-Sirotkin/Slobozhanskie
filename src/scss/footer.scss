@@ -1,0 +1,219 @@
+.footer {
+    transition: opacity 0.3s ease 0s;
+
+    a {
+        @media (any-hover: hover) {
+            &:not(.footer__logo) {
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+
+    background-color: $darkBlue;
+    color: #fff;
+    z-index: 1;
+    @include adaptiveValue("padding-top", 20, 10);
+    @include adaptiveValue("padding-bottom", 20, 10);
+    // .footer__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .footer__logo
+
+    &__logo {
+        align-self: center;
+        @include adaptiveValue("margin-bottom", 30, 15);
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        background-color: $darkBlue;
+
+        @media (any-hover: hover) {
+            &:hover {
+                &::before {
+                    width: rem(600);
+
+                }
+            }
+        }
+
+        @media (max-width:$mobile) {
+            flex: 0 0 auto;
+        }
+
+        img {
+            width: 85%;
+            transition: transform 0.5s ease 0s;
+
+            @media (max-width:rem(500)) {
+                width: rem(200);
+            }
+
+            @media (any-hover: hover) {
+                &:hover {
+                    transform: scale(0.95);
+                }
+            }
+        }
+
+        &::before {
+            content: '';
+            transition: width 0.5s ease 0s;
+            position: absolute;
+            background-color: #fff;
+            height: rem(1);
+            width: rem(1170);
+            right: 50%;
+            transform: translateX(50%);
+            top: 50%;
+            overflow: hidden;
+            z-index: -1;
+
+            @media (max-width:$mobile) {
+                top: 110%;
+                width: 100%;
+            }
+        }
+
+    }
+
+    // .footer__body
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        gap: rem(10);
+        @include adaptiveValue("padding-bottom", 45, 20);
+
+        @media (max-width:$mobile) {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            @include adaptiveValue("gap", 60, 25);
+        }
+    }
+
+    // .footer__lower
+
+    &__lower {
+        display: flex;
+        justify-content: space-between;
+        @include adaptiveValue("padding-top", 16, 10);
+        border-top: rem(1) solid #fff;
+
+        @media (max-width:$mobile) {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: rem(15);
+        }
+    }
+}
+
+.footer-nav {
+    display: flex;
+    gap: rem(20);
+    flex: 0 1 33%;
+
+    @media (max-width:rem(900)) {
+        flex-direction: column;
+    }
+
+    // .footer-nav__links
+
+    &__links {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        @include adaptiveValue("gap", 20, 10);
+    }
+
+    // .footer-nav__search
+
+    &__search {
+        @media (max-width:$mobile) {
+            width: rem(290);
+            margin: 0px auto;
+        }
+    }
+}
+
+.search {
+    color: $darkBlue;
+}
+
+.footer-contacts {
+    flex: 0 1 33%;
+    @include adaptiveValue("font-size", 24, 20);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    gap: rem(15);
+
+    li {
+        transition: transform 0.3s ease 0s;
+
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(0.96);
+            }
+        }
+    }
+}
+
+.footer-addr {
+    flex: 0 1 33%;
+    // .footer-addr__title
+
+    &__title {
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        margin-bottom: rem(13);
+    }
+
+    // .footer-addr__list
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        @include adaptiveValue("gap", 16, 12);
+    }
+
+    // .footer-addr__item
+
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: rem(8);
+
+        @media (max-width:$mobile) {
+            text-align: center;
+            justify-content: center;
+
+            a {
+                max-width: rem(180);
+            }
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                &::before {
+                    transform: scale(1.2);
+                    transition: all 0.3s ease 0s;
+                }
+            }
+        }
+
+        &::before {
+            font-size: rem(24);
+            color: $orange;
+            transition: all 0.3s ease 0s;
+        }
+    }
+}

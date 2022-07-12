@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Каталог"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header-background.htm',{})
+		<main class="page">
+			<section class="catalog-top">
+				<div class="catalog-top__container">
+					<div class="catalog-top__button">
+						<a href="#" class="catalog-top__button-link btn">Купить обои оптом</a>
+					</div>
+					<div class="catalog-top__body">
+						<div class="catalog-top-info">
+							<h1 class="catalog-top-info__title title">Описание</h1>
+							<p class="catalog-top-info__text">«Слобожанские» обои сочетают в себе красоту и
+								практичность, а также являются прекрасным решением для отделки жилых помещений благодаря
+								своей экологичности и безвредности. Большой выбор изумительных дизайнов, необычные и
+								интересные фактуры, объёмные, словно бархатные, рисунки, покрытые воздушным слоем
+								акрила, дают возможность создавать лёгкие и мягкие интерьеры, скрывая при этом дефекты и
+								неровности стен.</p>
+							<p class="catalog-top-info__text">Выберите «Слобожанские» обои и они подарят вашему дому
+								тепло и уют!</p>
+						</div>
+						<div class="catalog-top-slider">
+							<div class="catalog-top-slider__slider swiper">
+								<div class="catalog-top-slider__wrapper swiper-wrapper">
+									<div class="catalog-top-slider__slide swiper-slide">
+										<img src="@img/catalog/slider/slider-01.jpg" alt="slide">
+									</div>
+									<div class="catalog-top-slider__slide swiper-slide">
+										<img src="@img/catalog/slider/slider-02.jpg" alt="slide">
+									</div>
+									<div class="catalog-top-slider__slide swiper-slide">
+										<img src="@img/catalog/slider/slider-03.jpg" alt="slide">
+									</div>
+								</div>
+							</div>
+							<div class="catalog-top-slider__pagination swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="catalog-filter">
+				<div class="catalog-filter__container">
+					<form action="#">
+						<div class="filter-checkbox">
+							<input id="c_1" class="filter-checkbox__input" type="checkbox">
+							<label for="c_1" class="filter-checkbox__label">Абстракция и геометрия
+								<img src="@img/catalog/filter/ico1.png" alt="icon">
+							</label>
+						</div>
+						<div class="filter-checkbox">
+							<input id="c_2" class="filter-checkbox__input" type="checkbox">
+							<label for="c_2" class="filter-checkbox__label">Орнамент и классика
+								<img src="@img/catalog/filter/ico2.png" alt="icon">
+							</label>
+						</div>
+						<div class="filter-checkbox">
+							<input id="c_3" class="filter-checkbox__input" type="checkbox">
+							<label for="c_3" class="filter-checkbox__label">Полоса
+								<img src="@img/catalog/filter/ico3.png" alt="icon">
+							</label>
+						</div>
+						<div class="filter-checkbox">
+							<input id="c_4" class="filter-checkbox__input" type="checkbox">
+							<label for="c_4" class="filter-checkbox__label">Обои на потолок
+								<img src="@img/catalog/filter/ico4.png" alt="icon">
+							</label>
+						</div>
+						<div class="filter-checkbox">
+							<input id="c_5" class="filter-checkbox__input" type="checkbox">
+							<label for="c_5" class="filter-checkbox__label">Однотонные обои
+								<img src="@img/catalog/filter/ico5.png" alt="icon">
+							</label>
+						</div>
+						<div class="filter-checkbox">
+							<input id="c_6" class="filter-checkbox__input" type="checkbox">
+							<label for="c_6" class="filter-checkbox__label">Флористика
+								<img src="@img/catalog/filter/ico6.png" alt="icon">
+							</label>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="catalog-main">
+				<div class="paging">
+					<div class="paging__container">
+						<ul class="paging__list">
+							<li class="paging__item">
+								<a href="#" class="paging__link active">1</a>
+							</li>
+							<li class="paging__item">
+								<a href="#" class="paging__link">2</a>
+							</li>
+							<li class="paging__item">
+								<a href="#" class="paging__link">3</a>
+							</li>
+							<li class="paging__item">
+								<a href="#" class="paging__link">...</a>
+							</li>
+							<li class="paging__item">
+								<a href="#" class="paging__link">6</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="catalog-main__items">
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/04.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/06.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/07.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/05.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/06.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/07.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/04.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/05.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/06.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/07.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/04.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/05.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/04.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/05.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/06.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<h3 class="product__title">Артикул: 491-01</h3>
+						<a href="#" class="product__image-ibg">
+							<img src="@img/home/new/07.jpg" alt="product-img">
+						</a>
+						<div class="product-hover">
+							<h3 class="product-hover__title">
+								<a href="#" class="product-hover__title-link">Артикул: 487</a>
+							</h3>
+							<div class="product-hover__colors">
+								<p class="product-hover__colors-label">Оттенки:</p>
+								<div class="product-hover__colors-row">
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+									<a href="#" class="product-hover__colors-item">
+										<img src="@img/home/new/01.jpg" alt="color">
+									</a>
+								</div>
+							</div>
+							<div class="product-hover__footer">
+								<p class="product-hover__footer-title">Комбинируется с артикулом:</p>
+								<h4 class="product-hover__footer-subtitle">
+									<a href="#" class="product-hover__footer-subtitle-link">Артикул: 487</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="paging">
+					<div class="paging__container">
+						<ul class="paging__list">
+							<li class="paging__item">
+								<a href="#" class="paging__link active">1</a>
+							</li>
+							<li class="paging__item">
+								<a href="#" class="paging__link">2</a>
+							</li>
+							<li class="paging__item">
+								<a href="#" class="paging__link">3</a>
+							</li>
+							<li class="paging__item">
+								<a href="#" class="paging__link">...</a>
+							</li>
+							<li class="paging__item">
+								<a href="#" class="paging__link">6</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

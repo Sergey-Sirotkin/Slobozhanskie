@@ -1,0 +1,45 @@
+//Article====================================================================================================
+
+.post {
+      padding-top: rem(212);
+      @include adaptiveValue("padding-bottom", 50, 15);
+
+      @media (max-width:$mobile) {
+            @include adaptiveValue("padding-top", 212, 130);
+      }
+
+      // .post__title
+
+      &__title {
+            @include adaptiveValue("margin-bottom", 30, 15);
+      }
+
+      // .post__subtitle
+
+      &__subtitle {
+            font-weight: 700;
+      }
+
+      // .post__text
+
+      &__text {
+            line-height: 1.5;
+
+            &:not(:last-child) {
+                  @include adaptiveValue("margin-bottom", 30, 15);
+            }
+      }
+
+      // .post__img
+
+      &__img {
+            @include adaptiveValue("margin-bottom", 30, 15);
+            box-shadow: rem(-6) rem(6) rem(5) rem(0) rgba(0, 0, 0, 0.2);
+            display: inline-flex;
+
+            img {
+                  width: 100%;
+
+            }
+      }
+}

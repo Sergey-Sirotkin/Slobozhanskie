@@ -1,0 +1,275 @@
+//Main-Slider====================================================================================================
+
+.main-slider {
+    text-align: center;
+    @include adaptiveValue("padding-bottom", 50, 20);
+
+    // .main-slider__slide
+
+    &__slide-ibg {
+        padding-bottom: rem(650);
+
+        @media (max-width: $mobile) {
+            padding-bottom: rem(310);
+        }
+    }
+}
+
+//Benefits====================================================================================================
+
+.benefits {
+    @include adaptiveValue("padding-bottom", 50, 20);
+    // .benefits__container
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        @include adaptiveValue("gap", 20, 15);
+    }
+
+    // .benefits__item
+
+    &__item {
+        flex: 1 1 22%;
+        display: flex;
+        @include adaptiveValue("gap", 30, 10);
+        align-items: center;
+
+        @media (max-width: $pc) {
+            flex: 1 1 40%;
+        }
+
+        @media (max-width: $mobile) {
+            flex: 1 1 100%;
+        }
+    }
+
+    // .benefits__image
+
+    &__image {
+        img {
+            @include adaptiveValue("width", 76, 50);
+            @include adaptiveValue("height", 76, 50);
+        }
+    }
+
+    // .benefits__text
+
+    &__text {
+        cursor: default;
+        @include adaptiveValue("font-size", 22, 18);
+    }
+}
+
+//New====================================================================================================
+
+.new {
+    @include adaptiveValue("padding-bottom", 30, 20);
+    // .new__container
+
+    &__container {
+        text-align: center;
+    }
+}
+
+.new-slider {
+    // .new-slider__wrapper
+
+    &__wrapper {
+        @include adaptiveValue("padding-bottom", 34, 20);
+        @include adaptiveValue("padding-top", 34, 20);
+    }
+
+    // .new-slider__slide
+
+    &__slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+//Links====================================================================================================
+
+.links {
+    @include adaptiveValue("padding-bottom", 30, 20);
+    display: flex;
+
+    @media (max-width: $mobile) {
+        flex-direction: column;
+    }
+
+    .links__left,
+    .links__right {
+        box-shadow: rem(0) rem(6) rem(5) rem(0) rgba(0, 0, 0, 0.2);
+        flex: 0 1 50%;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &:only-child {
+            flex: 1 1 100%;
+            justify-content: center;
+        }
+
+        @include adaptiveValue("height", 220, 110);
+
+        @media (max-width: $mobile) {
+            flex: 1 1 auto;
+            justify-content: center;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                .links__link {
+                    opacity: 1;
+                    pointer-events: all;
+                    height: inherit;
+                    padding: rem(10);
+                }
+
+                .links__text {
+                    @include adaptiveValue("margin-bottom", 30, 15);
+                }
+            }
+        }
+    }
+
+    // .links__left
+
+    &__left {
+        background-image: url("@img/home/links/link-01.png");
+        justify-content: flex-end;
+    }
+
+    // .links__right
+
+    &__right {
+        background-image: url("@img/home/links/link-02.png");
+    }
+
+    &__body {
+        flex: 0 1 rem(570);
+        text-align: center;
+        color: #fff;
+        padding: rem(10) rem(10);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    // .links__text
+
+    &__text {
+        text-transform: uppercase;
+        @include adaptiveValue("font-size", 24, 17);
+        font-weight: 700;
+        cursor: default;
+        transition: margin-bottom 0.3s ease 0s;
+    }
+
+    // .links__link
+
+    &__link {
+        opacity: 0;
+        pointer-events: none;
+        height: 0;
+        padding: 0;
+        background-color: $darkBlue;
+        border-radius: rem(20);
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        @include adaptiveValue("width", 260, 200);
+        border: rem(1) solid #fff;
+        @include adaptiveValue("font-size", 18, 16);
+        flex-direction: row-reverse;
+        transition: background-color 0.3s ease 0s;
+
+        &::before {
+            margin-left: rem(10);
+            transition: transform 0.3s ease 0s;
+
+            @media (max-width: $mobile) {
+                display: none;
+            }
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: darken($darkBlue, 15%);
+
+                &::before {
+                    transform: translateX(rem(10));
+                }
+            }
+        }
+
+        @media (hover: none) {
+            opacity: 1;
+            pointer-events: all;
+            height: inherit;
+            padding: rem(8);
+            @include adaptiveValue("margin-top", 30, 15);
+        }
+    }
+}
+
+//Bestsellers====================================================================================================
+
+.bestsellers {
+    @include adaptiveValue("padding-bottom", 30, 20);
+
+    // .bestsellers__container
+
+    &__container {
+        text-align: center;
+    }
+}
+
+.bestsellers-slider {
+    // .bestsellers-slider__wrapper
+
+    &__wrapper {
+        @include adaptiveValue("padding-bottom", 34, 20);
+        @include adaptiveValue("padding-top", 34, 20);
+    }
+
+    // .bestsellers-slider__slide
+
+    &__slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+//home-text====================================================================================================
+
+.home-text {
+    @include adaptiveValue("padding-bottom", 30, 20);
+
+    // .home-text__title
+
+    &__title {
+        font-family: "Marck Script";
+        font-size: rem(24);
+        text-align: center;
+        margin-bottom: rem(12);
+    }
+
+    // .home-text__text
+
+    &__text {
+        font-size: 80%;
+        line-height: 1.5;
+
+        p {
+            &:not(:last-child) {
+                @include adaptiveValue("margin-bottom", 18, 12);
+            }
+        }
+    }
+}

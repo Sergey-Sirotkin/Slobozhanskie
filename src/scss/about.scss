@@ -1,0 +1,110 @@
+//About-Slider====================================================================================================
+
+.about-slider {
+    text-align: center;
+
+    // .about-slider__slide
+
+    &__slide-ibg {
+        padding-bottom: rem(650);
+
+        @media (max-width: $pc) {
+            padding-bottom: rem(450);
+        }
+
+        @media (max-width: $mobile) {
+            padding-bottom: rem(250);
+        }
+    }
+}
+
+//About-content====================================================================================================
+
+.about {
+    &:only-child {
+        padding-top: rem(212);
+
+        @media (max-width: $mobile) {
+            @include adaptiveValue("padding-top", 212, 130);
+        }
+    }
+
+    @include adaptiveValue("padding-top", 60, 15);
+    @include adaptiveValue("padding-bottom", 60, 15);
+
+    // .about__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .about__title
+
+    &__title {
+        margin-bottom: rem(20);
+
+        @media (max-width: $mobile) {
+            text-align: center;
+        }
+    }
+}
+
+.about-content {
+    display: flex;
+    gap: rem(30);
+    align-items: center;
+
+    &:not(:last-child) {
+        @include adaptiveValue("margin-bottom", 40, 15);
+    }
+
+    @media (max-width: $mobile) {
+        flex-direction: column;
+
+        &:nth-child(even) {
+            .about-content__img {
+                order: -1;
+            }
+        }
+    }
+
+    .about-content__text,
+    .about-content__img {
+        width: 50%;
+
+        @media (max-width: $mobile) {
+            width: 80%;
+        }
+
+        @media (max-width: $mobileSmall) {
+            width: 100%;
+        }
+    }
+
+    // .about-content__text
+
+    &__text {
+        line-height: 1.7;
+
+        @media (max-width: $pc) {
+            line-height: 1.4;
+        }
+
+        @include adaptiveValue("font-size", 18, 16);
+    }
+
+    //
+
+    &__img {
+        box-shadow: rem(-6) rem(6) rem(5) rem(0) rgba(0, 0, 0, 0.2);
+
+        @media (max-width: $mobile) {}
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
