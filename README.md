@@ -1,6 +1,3 @@
-# Slobozhanskie
-Website for wallpaper factory
-
 How to use
 =
 1. src - source code;
