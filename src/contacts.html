@@ -42,10 +42,11 @@
 					</div>
 					<div class="contacts-form">
 						<h3 class="contacts-form__title">Получить коммерческое предложение</h3>
-						<form action="#">
+						<form data-dev data-popup-message="#form-message" action="#">
 							<div class="contacts-form__inputs">
 								<input type="text" name="form[]" placeholder="Ваше имя" class="contacts-form__input">
-								<input type="text" name="form[]" placeholder="Ваш телефон" class="contacts-form__input">
+								<input required type="tel" name="form[]" placeholder="Ваш телефон"
+									class="contacts-form__input">
 							</div>
 							<button type="submit" class="contacts-form__button btn">Заказать звонок</button>
 						</form>
@@ -55,6 +56,7 @@
 		</main>
 		@@include('html/_footer.htm',{})
 	</div>
+	@@include('html/_popup.htm',{})
 	@@include('html/_js.htm',{})
 </body>
 
